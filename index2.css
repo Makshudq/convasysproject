@@ -1,0 +1,134 @@
+body{
+    margin: 0;  
+    padding: 0;
+   
+}
+
+ 
+.header1{
+
+    height: 40px;
+    padding: 20px 50px;
+    background-color: rgba(245, 245, 245, 0.592);
+}
+
+img{
+    height: 50px;
+
+}
+
+.profile{
+    display: flex;
+    position: absolute;
+    right: 55px;
+    top: 30px;
+}
+
+.profile img {
+    border-radius: 50%;
+}
+main{
+     
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    background-color: rgba(245, 245, 245, 0.592);
+    position: relative;
+
+}
+
+
+
+/* container1 starts */
+
+
+
+
+.container1{
+    grid-column: 1fr;
+  
+    padding: 20px 100px;
+}
+.search{
+    
+    border: none;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.273);
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 20px 10px;
+    width: 350px;
+    color: black;
+}
+
+.dropdown{
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 7px 15px;
+    margin: 8px 8px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: rgb(3, 203, 203);
+}
+
+ 
+ .table1 tr th {
+    background-color:  rgba(137, 242, 242, 0.53);
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+ 
+    
+ }
+ 
+ .table1 {
+    margin: 10px 0px 0px 0px ;
+  
+}
+
+h4{
+    margin: 30px 0px 30px;
+    color: rgb(3, 203, 203);
+}
+h3{
+    color: rgb(3, 203, 203);
+}
+.theading th {
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    
+}
+
+.table2 tr td{
+padding: 10px 10px;
+text-align: left;
+padding: 10px 20px;
+ 
+}
+.table2{
+    border: 1px solid black;
+    width: 405px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+ 
+
+/* container 2 starts */
+
+
+.container2{
+    grid-column: 1fr;
+    
+}
+ 
+ 
+.c2heading2{
+    position: absolute;
+    top: 0px;
+    right: 70px;
+     
+}  
+

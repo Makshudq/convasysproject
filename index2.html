@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index2.css">
+</head>
+
+<body>
+<div class="wrapper">
+
+    <header>
+        <div class="header1">
+            <img src="/logo1.png" alt="">
+            <div class="profile">
+                <img src="/profile.jpg" alt="">
+                <p>Sunita</p>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="container1">
+
+            <div>
+                <input type="text"  placeholder="Search Channel" class="search">
+            </div>
+
+            <select name="" class="Location dropdown">
+                <option value="">Location</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+            </select>
+
+            <select name="" class="gender dropdown">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+
+            </select>
+            <select name="" class="age dropdown">
+                <option value="">Age</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+
+            </select>
+
+            <h4>Top 10 Channels by viewership</h4>
+
+
+            <table class="table1">
+                <tr class="theading">
+                    <th>Sr. No</th>
+                    <th>Channel Name</th>
+                    <th>Number of Viewers</th>
+                </tr>
+            </table>
+
+            <table class="table1 table2">
+                <tr>
+                    <td>1</td>
+                    <td>Ten Sports</td>
+                    <td>14,32,667</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Star Sports 1 HD</td>
+                    <td>54,32,667</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Colors HD</td>
+                    <td>14,32,667</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Star Plus</td>
+                    <td>24,32,667</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Cartoon Networks</td>
+                    <td>12,32,667</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Zee TV</td>
+                    <td>10,32,667</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>India TV</td>
+                    <td>16,32,667</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>ABP News</td>
+                    <td>14,32,667</td>
+                </tr>
+              
+               
+
+            </table>
+
+        </section>
+
+
+        <!-- container2 -->
+
+
+
+        <section class="container2">
+
+            <div class="c2heading1">
+                <h3>Line Chart</h3>
+                <p>Last updated on 26 Jun, 5:20 PM IST</p>
+            </div>
+
+            <div class="c2heading2">
+                <h3>Total Viewers</h3>
+                <p>39,78,32,667</p>
+            </div>
+
+            <select name="" class="dropdown">
+                <option value="">From Time</option>
+                <option value="">From day</option>
+                <option value="Ahmedabad">From Month</option>
+            </select>
+
+            <select name="" class="dropdown">
+                <option value="">7:30 PM</option>
+                <option value="">Monday</option>
+                <option value="Ahmedabad">July</option>
+            </select>
+
+            <div id="curve_chart" style="width: 700px; height: 400px"></div>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Years', 'Viewers in last 12hrs', ],
+          ['22:00',  20000,       ],
+          ['01:00',  10000,       ],
+          ['04:00',  5000,        ],
+          ['07:00',  15000,       ]
+        ]);
+
+        var options = {
+          title: 'Colors HD - 13,99,888',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</html>
